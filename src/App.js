@@ -2,25 +2,25 @@ import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './TodoButton';
+import { CreateTodoButton } from './CreateTodoButton';
 import './App.css';
+import React from 'react';
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <React.Fragment>
+            <TodoCounter completed={16} total={25} />
+            <TodoSearch />
 
-      <TodoCounter />
-      <TodoSearch />
+            <TodoList>
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+            </TodoList>
 
-      <TodoList>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-      </TodoList>
-
-      <CreateTodoButton />
-    </div>
-  );
+            <CreateTodoButton />
+        </React.Fragment>
+    );
 }
 
 export default App;
