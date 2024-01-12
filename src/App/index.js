@@ -3,16 +3,16 @@ import { AppUI } from './AppUI';
 import { useLocalStorage } from './useLocalStorage';
 
 // Esto comentado se ingresa en consola a LocalStorage para el ejemplo
-// const defaultTodos = [
-//     {text: 'Hacer comida semanal', completed: true},
-//     {text: 'Tomar curso de introduccion a React.js', completed: false},
-//     {text: 'Llorar con los amigos', completed: false},
-//     {text: 'Leer un libro completo', completed: false},
-//     {text: 'Salir en bicicleta', completed: true},
-// ];
+const defaultTodos = [
+    {text: 'Hacer comida semanal', completed: true},
+    {text: 'Tomar curso de introduccion a React.js', completed: false},
+    {text: 'Llorar con los amigos', completed: false},
+    {text: 'Leer un libro completo', completed: false},
+    {text: 'Salir en bicicleta', completed: true},
+];
 
-// const stringifiedTodos = JSON.stringify(defaultTodos);
-// localStorage.setItem('TODOS_V1', stringifiedTodos);
+const stringifiedTodos = JSON.stringify(defaultTodos);
+localStorage.setItem('TODOS_V1', stringifiedTodos);
 
 function App() {
     const {
