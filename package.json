@@ -9,6 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
@@ -28,5 +30,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://ChrisValDev.github.io/curso-React-Basico",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
